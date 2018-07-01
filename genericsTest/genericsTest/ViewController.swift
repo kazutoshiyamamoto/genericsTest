@@ -9,22 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
-        isEqual()
-        isEqual(1,1)
         
+        print(isEqual())
+        print(isEqual(1,1))
+        print(isEqual(1.1,1.1))
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func isEqual() -> Bool {
         return 1 == 1
     }
@@ -32,6 +32,10 @@ class ViewController: UIViewController {
     func isEqual(_ x: Int, _ y: Int) -> Bool {
         return x == y
     }
-
+    
+    func isEqual(_ x: Float, _ y:Float) -> Bool {
+        return x == y
+    }
+    
 }
 
